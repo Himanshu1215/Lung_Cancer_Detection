@@ -1,0 +1,18 @@
+model_name: vit_base_patch14_dinov2
+pretrained: true
+freeze_backbone: true    # linear-probe only — backbone weights frozen
+
+epochs: 30
+batch_size: 256
+lr_head: 0.001
+lr_backbone: 0.0         # ignored when freeze_backbone=true
+weight_decay: 0.0
+warmup_epochs: 2
+patience: 10
+
+protocol: B
+num_workers: 8
+seed: 42
+
+wandb_project: lung_leakage
+compile_model: false

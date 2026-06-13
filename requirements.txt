@@ -1,0 +1,19 @@
+# ── CPU VM (preprocessing) ─────────────────────────────────────────────────────
+SimpleITK>=2.5.0
+numpy>=2.0.0
+pandas>=2.0.0
+Pillow>=10.0.0
+tqdm>=4.60.0
+psutil>=5.9.0
+
+# ── GPU VM (training) ──────────────────────────────────────────────────────────
+torch>=2.2.0
+torchvision>=0.17.0
+albumentations>=1.4.0
+opencv-python-headless>=4.8.0
+timm>=0.9.0
+wandb>=0.16.0
+pyyaml>=6.0
+
+# ── Both VMs ───────────────────────────────────────────────────────────────────
+scikit-learn>=1.3.0

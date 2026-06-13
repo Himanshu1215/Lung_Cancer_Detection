@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+venv/
+.venv/
+
+# Anchored to repo root so src/data/ and src/models/ (source code) are NOT ignored
+/data/
+/models/
+
+# Experiment tracking & logs
+wandb/
+*.log
+
+# Local tooling
+.claude/
+
+.DS_Store
